@@ -1,0 +1,123 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="{% static './img/logo.png' %}">
+	<!-- Author Meta -->
+	<meta name="author" content="">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>nutriMush</title>
+	<link rel="icon" href="{% static './img/logo.png' %}" type="image/png">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+	<!--CSS============================================= -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+    <link rel="stylesheet" href="{% static 'css/data.css'%}">
+	
+</head>
+<body>
+    <div class="container-fluid  ">
+        <div class="container nav-bg ">
+            <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
+                <a class="navbar-brand" href="#">
+                    <img src="{% static 'img/logo.png' %}" alt="" class="logo-img">
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link font-weigh-bold text-light" href="{% url 'home'%}">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weigh-bold text-light" href="{% url 'home'%}#portfolio">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weigh-bold text-light" href="{% url 'customers'%}">Customers</a>
+                        </li>
+                       
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2 bg-transparent" type="text" placeholder="Search">
+                        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row d-flex justify-content-center align-content-center">
+            <div class="col-md-2 data1 mr-3">
+                <h3 class="text-center font-weight-bold text-warning">ORDER <br> STATS</h3>
+                <div class="card bg-transparent">
+                    <div class="card-body  rounded stat-card">
+                        <p class="card-title text-center font-weight-bold">Pending</p>
+                        <hr class="bg-success" >
+                        <p class="card-text text-center text-white h4">{{pending}}</p>
+                    </div>
+                </div>
+                <div class="card bg-transparent">
+                    <div class="card-body  rounded stat-card">
+                        <p class="card-title text-center font-weight-bold">Delivered</p>
+                        <hr class="bg-success">
+                        <p class="card-text text-center text-white h4">{{delivered}}</p>
+                    </div>
+                </div>
+                <div class="card bg-transparent">
+                    <div class="card-body  rounded stat-card">
+                        <p class="card-title text-center font-weight-bold">Total</p>
+                        <hr class="bg-success">
+                        <p class="card-text text-center text-white h4">{{total_orders}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 data2 py-2">
+                <h2 class="text-center font-weight-bold text-warning py-3" style="color: lawngreen;">CUSTOMER ORDERS</h2>
+                    <div class="card card-body ncard pt-3 py-2 mt-4">
+                        <a class="h2 btn btn-success btn-md" href="{% url 'home'%}#portfolio">Products</a>
+                        <table class="table-md table text-dark data-table">
+                            <tr class="text-warning">
+                                <th>Product</th>
+                                <th>Date Ordered</th>
+                                <th>Status</th>
+                                <th>Customer Name</th>
+                               
+                            </tr>
+                            
+                          {% for order in orders %}
+                                
+                                    <tr class="text-light">
+                                        <td>{{order.products}} </td>
+                                        <!-- {% comment %} <td>{{order.category}} </td> {% endcomment %} -->
+                                        <td>{{order.date_created}} </td>
+                                        <td>{{order.status}}</td>
+                                        <td><a class="text-primary btn-sm" href="http://127.0.0.1:8000/customers/">{{order.customers}}</a>
+                                        
+                                    </tr>
+                      
+                            {% endfor %}
+                        </table>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+    
+</body>
+
+</html>

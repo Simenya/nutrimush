@@ -1,0 +1,405 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="{% static './img/logo.png' %}">
+	<!-- Author Meta -->
+	<meta name="author" content="">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>nutriMush</title>
+	<link rel="icon" href="{% static './img/logo.png' %}" type="image/png">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+	<!--CSS============================================= -->
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.css'%}">
+	<link rel="stylesheet" href="{% static 'css/nice-select.css'%}">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+    <link rel="stylesheet" href="{% static 'css/main.css'%}">
+	
+    {% comment %} 
+	<link rel="stylesheet" href="{% static 'css/linearicons.css'%}">
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}">
+	
+	<link rel="stylesheet" href="{% static 'css/magnific-popup.css'%}">
+	
+	<link rel="stylesheet" href="{% static 'css/animate.min.css'%}">
+	
+	 {% endcomment %}
+</head>
+
+<body>
+	<div class="protfolio-wrap">
+
+		<!-- Start Header Area -->
+		<header class="default-header">
+			<nav class="navbar navbar-expand-lg  navbar-light">
+				<div class="container">
+					<a class="navbar-brand" href="index.html">
+						<img src="{% static 'img/logo.png' %}" alt="" class="logo-img">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="text-white lnr lnr-menu"></span>
+					</button>
+
+					<div class="collapse navbar-collapse justify-content-end align-items-center"
+						id="navbarSupportedContent">
+						<ul class="navbar-nav">
+							<li><a href="{% url 'home'%}#intro">Home</a></li>
+							<li><a href="{% url 'home'%}#portfolio">Products</a></li>
+							<li><a href="{% url 'home'%}#service">Services</a></li>
+							<li><a href="{% url 'customers'%}">Customers</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- End Header Area -->
+		<!-- start banner Area -->
+		<section class="banner-area relative" id="home">
+			<div class="overlay overlay-bg"></div>
+			<div class="container">
+				<div class="row fullscreen d-flex align-items-center justify-content-center">
+					<div class="banner-content col-lg-10">
+						<h5 class="text-uppercase">incredible Taste with great health</h5>
+						<h1>
+							Nutri Mush!
+						</h1>
+						<a href="#intro" class="primary-btn text-uppercase">Explore Now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End banner Area -->
+
+		<!-- SAMPLE  -->
+		<div class="container " id="intro">
+			<div class="row d-flex justify-content-center">
+				<div class="menu-content col-lg-10">
+					<div class="title text-center">
+						<h1 class="mb-10">Who we Are</h1>
+						<p>NutriMush is the leading supplier of high-quality mushroom products in the East African
+							region, we sell a variety of mushroom products starting from fresh, dried, powdered,
+							juiced mushrooms and more. Our business is conducted online and we deliver to different
+							places. We are happy to serve our customers with our utmost services and don’t hesitate
+							to reach us out for more information.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- SAMPLE  -->
+
+		<!-- Start portfolio-area Area -->
+		<section class="portfolio-area section-gap" id="portfolio">
+			<div class="container">
+				<div class="filters">
+					<ul>
+						<li class="active" data-filter="*">OUR PRODUCTS</li>
+
+					</ul>
+				</div>
+
+				<div class="filters-content">
+					<div class="row grid">
+						<div class="single-portfolio col-sm-4 all corporate">
+							<div class="item">
+								<img src="{% static 'img/p1.jpg' %}" alt="Work 1">
+								<div class="p-inner">
+									<h4><a href="/orders">Fresh Mushroom</a></h4>
+									<div class="cat">Check out</div>
+								</div>
+							</div>
+						</div>
+						<div class="single-portfolio col-sm-4 all personal">
+							<div class="item">
+								<img src="{% static 'img/p2.jpg' %}" alt="Work 1">
+								<div class="p-inner">
+									<h4><a href="/orders">Grilled Mushroom</a></h4>
+									<div class="cat">Check out</div>
+								</div>
+							</div>
+						</div>
+						<div class="single-portfolio col-sm-4 all agency">
+							<div class="item">
+								<img src="{% static 'img/p9.jpg' %}" alt="Work 1">
+								<div class="p-inner">
+									<h4><a href="/orders">Canned Mushroom </a></h4>
+									<div class="cat">Check out</div>
+								</div>
+							</div>
+						</div>
+						<div class="single-portfolio col-sm-4 all portal">
+							<div class="item">
+								<img src="{% static 'img/p12.jpg' %}" alt="Work 1">
+								<div class="p-inner">
+									<h4><a href="/orders">Mushroom Juice</a></h4>
+									<div class="cat">Check out</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="single-portfolio col-sm-4 all corporate">
+							<div class="item">
+								<img src="{% static 'img/p5.jpg' %}" alt="Work 1">
+								<div class="p-inner">
+									<h4><a href="/orders">Fresh Mushroom</a></h4>
+									<div class="cat">Check out</div>
+								</div>
+							</div>
+						</div>
+						<div class="single-portfolio col-sm-4 all personal">
+							<div class="item">
+								<img src="{% static 'img/p6.jpg' %}" alt="Work 1">
+								<div class="p-inner">
+									<h4><a href="/orders">Mush Mchuzi</a></h4>
+									<div class="cat">Check out</div>
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- End portfolio-area Area -->
+
+
+		<!-- Start service Area -->
+		<section class="service-area section-gap relative" id="service">
+			<div class="overlay overlay-bg"></div>
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<div class="menu-content pb-60 col-lg-10">
+						<div class="title text-center">
+							<h1 class="mb-10 text-white">Always in our customer Favour</h1>
+							<p>Who focus on the value for money on any product</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End service Area -->
+
+		<!-- Start services Area -->
+		<section class="services-area pb-100">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="single-service">
+							<img class="img-fluid" src="{% static 'img/s1.png' %}" alt="">
+							<h4>Guaranteed Satisifaction</h4>
+							<p>
+								It's totaly on you what you want to order for, we ensure that we deliver the best to
+								your doorstep.
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="single-service">
+							<img class="img-fluid" src="{% static 'img/s2.png' %}" alt="">
+							<h4>Fast Delivery</h4>
+							<p>
+								We always ensure that your products get to you in the least possible time. With a 24
+								hour support for our clients
+								we keep you to date with you orders status
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="single-service">
+							<img class="img-fluid" src="{% static 'img/s3.png' %}" alt="">
+							<h4>Quality at it's Best</h4>
+							<p>
+								We have wide Varieties of Hotel &amp; Resorts to accomodate you. 3D4N or 15D16N totally
+								upto you.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End services Area -->
+
+		<!-- Start review Area -->
+		<section class="review-area section-gap" id="testimonial">
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<div class="menu-content pb-60 col-lg-10">
+						<div class="title text-center">
+							<h1 class="mb-10">How Our Customers felt for Us</h1>
+							<p>Who are in extreme love with our products &amp; the services we render</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="single-review">
+							<img src="{% static 'img/c1.png' %}" alt="">
+							<div class="title d-flex flex-row">
+								<a href="#">
+									<h4>Fannie Rowe</h4>
+								</a>
+								<div class="star">
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+								</div>
+							</div>
+							<p>
+								It was a life Experience getting to test the Mushroom Mchuzi, nothing tastes as good as it.
+							</p>
+						</div>
+						<div class="single-review">
+							<img src="{% static 'img/c3.png' %}" alt="">
+							<div class="title d-flex flex-row">
+								<a href="#">
+									<h4>Sumaiya Nk</h4>
+								</a>
+								<div class="star">
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+								</div>
+							</div>
+							<p>
+								I only have Just one Word for Nutri Mush - Incredible!
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="single-review">
+							<img src="{% static 'img/c2.png' %}" alt="">
+							<div class="title d-flex flex-row">
+								<a href="#">
+									<h4>Kaggwa Bob</h4>
+								</a>
+								<div class="star">
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-starchecked"></span>
+									<span class="fa fa-star checked"></span>
+								</div>
+							</div>
+							<p>
+								Damm! I never thought quality products could ever be easily accessed like this.
+							</p>
+						</div>
+						<div class="single-review">
+							<img src="{% static 'img/c4.png' %}" alt="">
+							<div class="title d-flex flex-row">
+								<a href="#">
+									<h4>Mukasa Denis</h4>
+								</a>
+								<div class="star">
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+								</div>
+							</div>
+							<p>
+								Now, I am big fan of Nutri Mush. Thanks for the service you offer to this world. You saved us a lot of hustle looking for trusted nutrious products.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End review Area -->
+
+
+		<!-- start footer Area -->
+		<footer class="footer-area section-gap">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-6 col-sm-6">
+						<div class="single-footer-widget">
+							<h6>About Us</h6>
+							<p>
+								NutriMush is the leading supplier of high-quality mushroom products in the East African
+								region, we sell a variety of mushroom products starting from fresh, dried, powdered,
+								juiced mushrooms and more. Our business is conducted online and we deliver to different
+								places. We are happy to serve our customers with our utmost services and don’t hesitate
+								to reach us out for more information.
+							</p>
+							<p class="footer-text">
+								Copyright &copy;
+								<script>document.write(new Date().getFullYear());</script> All rights reserved | <span
+									style="font-weight: bold;">NutriMush </span> Inc.
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-5  col-md-6 col-sm-6">
+						<div class="single-footer-widget">
+							<h6>Newsletter</h6>
+							<p>Stay update with our latest Offers and News</p>
+							<div class="" id="mc_embed_signup">
+								<form target="_blank" action="" method="get" class="form-inline">
+									<input class="form-control" name="EMAIL" placeholder="Enter Email"
+										onfocus="this.placeholder = ''"
+										onblur="this.placeholder = 'Enter Your Email Here '" required="" type="email">
+									<button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right"
+											aria-hidden="true"></i></button>
+
+									<div class="info"></div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+						<div class="single-footer-widget">
+							<h6>Follow Us</h6>
+							<p>Let us be social</p>
+							<div class="footer-social d-flex align-items-center">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-snapchat"></i></a>
+								<a href="#"><i class="fa fa-instagram"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End footer Area -->
+	</div>
+	<script src="{% static 'js/vendor/jquery-2.2.4.min.js' %}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.{% static 'js/1.12.9/umd/popper.min.js' %}"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/easing.min.js' %}"></script>
+	<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+	<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'js/jquery.sticky.js' %}"></script>
+	<script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+	<script src="{% static 'js/parallax.min.js' %}"></script>
+	<script src="{% static 'js/mail-script.js' %}"></script>
+	<script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
